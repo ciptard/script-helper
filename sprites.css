@@ -2,7 +2,7 @@
 	display: inline-block;
 	width: 64px;
 	height: 64px;
-	background-image: url(../images/sprites.png);
+	background-image: url(sprites.png);
 	background-repeat: no-repeat;
 }
 .icon-phone {
