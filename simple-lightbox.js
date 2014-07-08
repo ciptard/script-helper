@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function($) {
 
 var current, size;  
@@ -7,7 +6,7 @@ var current, size;
    
     e.preventDefault();								// prevent default click event
     var image_href = $(this).attr("href"); 			// grab href from clicked element    
-    var slideNum = $('.lightbox35').index(this);	    // determine the index of clicked trigger
+    var slideNum = $('.post-content .separator a').index(this);	    // determine the index of clicked trigger
 
     // find out if #lightbox exists
     if ($('#slideshow').length > 0) {        
@@ -30,7 +29,7 @@ var current, size;
       $('body').append(lightbox);
       
       // fill lightbox with .lightbox35 hrefs in #imageSet
-      $('#imageSet').find('.lightbox35').each(function() {
+      $('.post-content').find('.separator a').each(function() {
         var $href = $(this).attr('href');
         $('#slideshow').append(
           '<img src="' + $href + '">'
