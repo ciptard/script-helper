@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
 var current, size;  
- $('.lightbox35').click(function(e) {  
+ $('.post-content .separator a').click(function(e) {  
 
    
     e.preventDefault();								// prevent default click event
