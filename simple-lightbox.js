@@ -179,7 +179,7 @@ function appendStyle(styles) {
 
 
 function appendHEAD(){ var hedA= document.createElement('head'); document.appendChild(hedA);}
-var styles = '#slideshow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .8);}'+
+var styles = '#slideshow { position: fixed; top: 0; left: 0; z-index:1000; width: 100%; height: 100%; background: rgba(0, 0, 0, .8);}'+
 '#slideshow  p { font-size:20px; position:fixed; z-index:999; cursor:pointer; padding:5px 10px; border:1px solid #999; right:5px; top:5px; text-align:  right; color: #fff; background: rgba(100, 100, 100, .5); border-radius:3px;}'+
 '#slideshow img { position: absolute; top: 5%; left: 0px; right: 0px; bottom:5%; align:center; max-width:90%; max-height:90%; margin:auto;}'+
 '.prev, .next {  z-index:999; background: rgba(100, 100, 100, .5); cursor:pointer; position: absolute; top: 45%; border:1px solid #999; padding: 6px ; color: #fff; text-decoration: none; position: absolute;font-size:30px;text-shadow:1px 1px 0px #444;}'+
